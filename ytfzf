@@ -200,7 +200,7 @@ done
 #the menu to use instead of fzf when -D is specified
 command_exists "external_menu" || external_menu () {
 	#dmenu extremely laggy when showing tabs
-	tr -d '\t' | dmenu -i -l 30 -p "$1"
+	tr -d '\t' | dmenu -l 30 -p "$1"
 }
 
 command_exists "search_prompt_menu" || search_prompt_menu () {
